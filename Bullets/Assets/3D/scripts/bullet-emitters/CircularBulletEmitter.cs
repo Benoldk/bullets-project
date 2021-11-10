@@ -1,9 +1,8 @@
 ﻿using game.package.utilities;
-using UnityEngine;
 
 namespace game.package.bullets
 {
-    public class MultiBulletEmitter : BulletEmitterBase
+    public class CircularBulletEmitter : BulletEmitterBase
     {
         protected override void Initialize()
         {

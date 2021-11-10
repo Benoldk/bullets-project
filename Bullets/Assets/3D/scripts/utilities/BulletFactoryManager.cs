@@ -23,8 +23,8 @@ namespace game.package.bullets
             if (bulletFormation == BulletFormation.UniDirectional)
                 return new UnidirectionalBulletFactory(gameObjectPool);
 
-            //if (bulletFormation == BulletFormation.Circular)
-            //    return new CircularBulletFactory(gameObjectPool);
+            if (bulletFormation == BulletFormation.Circular)
+                return new CircularBulletFactory(gameObjectPool);
 
             return null;
         }

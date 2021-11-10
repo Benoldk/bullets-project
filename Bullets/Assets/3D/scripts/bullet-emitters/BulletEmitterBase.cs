@@ -8,6 +8,8 @@ namespace game.package.bullets
         [SerializeField] protected BulletBase bulletPrefab;
         [SerializeField] protected float fireRate;
         [SerializeField] protected BulletFormation bulletFormation;
+        [SerializeField] protected int bulletCount = 2;
+        [SerializeField] protected float distance = 1f;
 
         protected BulletFactoryManager bulletFactoryManager;
         protected BulletFactoryBase bulletFactory;
