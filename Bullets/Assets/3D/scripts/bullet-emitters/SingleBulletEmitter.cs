@@ -1,9 +1,8 @@
 ﻿using game.package.utilities;
-using UnityEngine;
 
 namespace game.package.bullets
 {
-    public class MultiBulletEmitter : BulletEmitterBase
+    public class SingleBulletEmitter : BulletEmitterBase
     {
         protected override void Initialize()
         {
@@ -13,8 +12,8 @@ namespace game.package.bullets
                 parentTransform = transform,
                 bulletFormation = bulletFormation,
                 prefab = bulletPrefab,
-                count = bulletCount,
-                distance = distance
+                count = 1,
+                distance = 0
             };
             bulletFactory = BulletFactoryManager.Instance.GetBulletFactory(bulletFactoryProfile.bulletFormation, gameObjectPool);
         }
