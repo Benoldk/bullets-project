@@ -7,21 +7,22 @@ namespace game.package.bullets
     {
         [SerializeField] protected BulletBase bulletPrefab;
         [SerializeField] protected float fireRate;
+        [SerializeField] protected BulletFormation bulletFormation;
 
+        protected BulletFactoryManager bulletFactoryManager;
+        protected BulletFactoryBase bulletFactory;
+        protected BulletFactoryProfile bulletFactoryProfile;
         protected GameObjectPoolBase gameObjectPool;
         protected float fireRateElpasedTime;
 
+        protected abstract void Initialize();
         public abstract void CreateBullet();
-
-        protected virtual GameObject GetBulletGameObject()
+        
+        private void Start()
         {
-            var bulletClone = gameObjectPool.GetGameObject(bulletPrefab);
-            bulletClone.transform.rotation = transform.rotation;
-            bulletClone.transform.position = transform.position;
-            bulletClone.GetComponent<BulletBase>().direction = Vector3.forward;
-            return bulletClone;
+            Initialize();
         }
-
+        
         private void Update()
         {
             fireRateElpasedTime += Time.deltaTime;

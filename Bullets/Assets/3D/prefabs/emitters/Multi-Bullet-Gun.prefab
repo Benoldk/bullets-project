@@ -109,5 +109,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2720476415316877727, guid: 7f95fa2c1f9d6854a93dd18a434eca37,
     type: 3}
   fireRate: 0.5
+  bulletFormation: 1
   bulletCount: 4
-  bulletLateralOffset: 2
+  distance: 0.1
