@@ -14,7 +14,8 @@
         /// Hexagon,
         /// Heptagon,
         /// Octagon,
-        /// Decagon...
+        /// Decagon,
+        /// and more
         /// </summary>
         Polygon
     }
