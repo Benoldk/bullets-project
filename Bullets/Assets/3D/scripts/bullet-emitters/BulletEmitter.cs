@@ -2,7 +2,7 @@
 
 namespace game.package.bullets
 {
-    public class SingleBulletEmitter : BulletEmitterBase
+    public class BulletEmitter : BulletEmitterBase
     {
         protected override void Initialize()
         {

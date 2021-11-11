@@ -2,7 +2,7 @@
 
 namespace game.package.bullets
 {
-    public class UniDirectionalBullet : BulletBase
+    public class Bullet : BulletBase
     {
         private void Update()
         {

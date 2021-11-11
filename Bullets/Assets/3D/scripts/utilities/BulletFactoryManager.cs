@@ -20,12 +20,6 @@ namespace game.package.bullets
             if (bulletFormation == BulletFormation.Single)
                 return new SingleBulletFactory(gameObjectPool);
 
-            if (bulletFormation == BulletFormation.UniDirectional)
-                return new UnidirectionalBulletFactory(gameObjectPool);
-
-            if (bulletFormation == BulletFormation.Circular)
-                return new CircularBulletFactory(gameObjectPool);
-
             return null;
         }
     }

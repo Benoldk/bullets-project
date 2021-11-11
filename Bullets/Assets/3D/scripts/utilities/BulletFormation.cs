@@ -3,7 +3,19 @@
     public enum BulletFormation
     {
         Single,
-        UniDirectional,
-        Circular,
+        Line,
+        Curve,
+        SemiCircle,
+        Circle,
+        /// <summary>
+        /// Triangle,
+        /// Square/Rectangle,
+        /// Kite,
+        /// Hexagon,
+        /// Heptagon,
+        /// Octagon,
+        /// Decagon...
+        /// </summary>
+        Polygon
     }
 }

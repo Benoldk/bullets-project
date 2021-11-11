@@ -6,8 +6,8 @@ namespace game.package.bullets
     public abstract class BulletEmitterBase : MonoBehaviour
     {
         [SerializeField] protected BulletBase bulletPrefab;
-        [SerializeField] protected float fireRate;
         [SerializeField] protected BulletFormation bulletFormation;
+        [SerializeField] protected float fireRate;
         [SerializeField] protected int bulletCount = 2;
         [SerializeField] protected float distance = 1f;
 
