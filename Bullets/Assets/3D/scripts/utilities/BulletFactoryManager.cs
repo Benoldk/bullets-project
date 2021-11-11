@@ -20,6 +20,9 @@ namespace game.package.bullets
             if (bulletFormation == BulletFormation.Single)
                 return new SingleBulletFactory(gameObjectPool);
 
+            if (bulletFormation == BulletFormation.Line)
+                return new LineBulletFactory(gameObjectPool);
+
             return null;
         }
     }

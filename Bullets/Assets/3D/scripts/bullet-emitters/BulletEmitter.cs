@@ -12,8 +12,8 @@ namespace game.package.bullets
                 parentTransform = transform,
                 bulletFormation = bulletFormation,
                 prefab = bulletPrefab,
-                count = 1,
-                distance = 0
+                bulletCount = bulletCount,
+                distance = distance
             };
             bulletFactory = BulletFactoryManager.Instance.GetBulletFactory(bulletFactoryProfile.bulletFormation, gameObjectPool);
         }
