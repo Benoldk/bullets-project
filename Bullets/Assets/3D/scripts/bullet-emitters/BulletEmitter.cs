@@ -13,7 +13,9 @@ namespace game.package.bullets
                 bulletFormation = bulletFormation,
                 prefab = bulletPrefab,
                 bulletCount = bulletCount,
-                distance = distance
+                bulletSpacing = bulletSpacing,
+                orbitAngle = orbitAngle,
+                muzzleOffset = muzzleOffset,
             };
             bulletFactory = BulletFactoryManager.Instance.GetBulletFactory(bulletFactoryProfile.bulletFormation, gameObjectPool);
         }

@@ -1379,8 +1379,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658937453227675993, guid: 526a5d7c184b1e746be4708201d72b64,
         type: 3}
+      propertyPath: angle
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658937453227675993, guid: 526a5d7c184b1e746be4708201d72b64,
+        type: 3}
+      propertyPath: offset.z
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658937453227675993, guid: 526a5d7c184b1e746be4708201d72b64,
+        type: 3}
+      propertyPath: orbitAngle
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658937453227675993, guid: 526a5d7c184b1e746be4708201d72b64,
+        type: 3}
       propertyPath: bulletCount
-      value: 21
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6658937453227675994, guid: 526a5d7c184b1e746be4708201d72b64,
         type: 3}
@@ -1400,7 +1415,7 @@ PrefabInstance:
     - target: {fileID: 6658937453227675994, guid: 526a5d7c184b1e746be4708201d72b64,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6658937453227675994, guid: 526a5d7c184b1e746be4708201d72b64,
         type: 3}
