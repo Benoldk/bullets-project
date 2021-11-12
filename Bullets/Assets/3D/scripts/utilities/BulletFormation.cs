@@ -4,8 +4,6 @@
     {
         Single,
         Line,
-        Curve,
-        SemiCircle,
         Circle,
         /// <summary>
         /// From 3 to 12 sided polygons
