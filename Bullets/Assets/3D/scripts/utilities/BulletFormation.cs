@@ -8,15 +8,12 @@
         SemiCircle,
         Circle,
         /// <summary>
-        /// Triangle,
-        /// Square/Rectangle,
-        /// Kite,
-        /// Hexagon,
-        /// Heptagon,
-        /// Octagon,
-        /// Decagon,
-        /// and more
+        /// From 3 to 12 sided polygons
         /// </summary>
-        Polygon
+        Polygon,
+        /// <summary>
+        /// Multiple emitters combined to create unique patterns
+        /// </summary>
+        Compound,
     }
 }
