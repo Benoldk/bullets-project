@@ -4,7 +4,7 @@ namespace game.package.bullets
 {
     public class BulletFactoryManager
     {
-        private static BulletFactoryManager _instance;
+        protected static BulletFactoryManager _instance;
         public static BulletFactoryManager Instance
         {
             get
@@ -15,16 +15,13 @@ namespace game.package.bullets
             }
         }
 
-        public BulletFactoryBase GetBulletFactory(BulletFormation bulletFormation, GameObjectPoolBase gameObjectPool)
+        public virtual BulletFactoryBase GetBulletFactory(BulletFormation bulletFormation, GameObjectPoolBase gameObjectPool)
         {
             if (bulletFormation == BulletFormation.Single)
                 return new SingleBulletFactory(gameObjectPool);
 
-            if (bulletFormation == BulletFormation.UniDirectional)
-                return new UnidirectionalBulletFactory(gameObjectPool);
-
-            if (bulletFormation == BulletFormation.Circular)
-                return new CircularBulletFactory(gameObjectPool);
+            if (bulletFormation == BulletFormation.Line)
+                return new LineBulletFactory(gameObjectPool);
 
             return null;
         }

@@ -2,7 +2,7 @@
 
 namespace game.package.bullets
 {
-    public class SingleBulletEmitter : BulletEmitterBase
+    public class BulletEmitter : BulletEmitterBase
     {
         protected override void Initialize()
         {
@@ -12,8 +12,10 @@ namespace game.package.bullets
                 parentTransform = transform,
                 bulletFormation = bulletFormation,
                 prefab = bulletPrefab,
-                count = 1,
-                distance = 0
+                bulletCount = bulletCount,
+                bulletSpacing = bulletSpacing,
+                orbitAngle = orbitAngle,
+                muzzleOffset = muzzleOffset,
             };
             bulletFactory = BulletFactoryManager.Instance.GetBulletFactory(bulletFactoryProfile.bulletFormation, gameObjectPool);
         }

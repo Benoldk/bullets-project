@@ -7,7 +7,9 @@ namespace game.package.bullets
         public Transform parentTransform;
         public BulletFormation bulletFormation;
         public MonoBehaviour prefab;
-        public int count;
-        public float distance;
+        public Vector3 muzzleOffset;
+        public int bulletCount;
+        public float bulletSpacing;
+        public float orbitAngle;
     }
 }
