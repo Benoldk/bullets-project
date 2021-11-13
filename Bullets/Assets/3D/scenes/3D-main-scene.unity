@@ -489,7 +489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1355,8 +1355,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
         type: 3}
+      propertyPath: angle
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: mirror
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: areaAngle
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: orbitAngle
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
       propertyPath: bulletCount
-      value: 15
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: orientationAngle
+      value: 315
       objectReference: {fileID: 0}
     - target: {fileID: 8618261807669695808, guid: ca37230202d600f42837ff98a97fd6d6,
         type: 3}

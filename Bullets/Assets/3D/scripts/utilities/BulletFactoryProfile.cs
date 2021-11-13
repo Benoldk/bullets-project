@@ -10,6 +10,7 @@ namespace game.package.bullets
         public Vector3 muzzleOffset;
         public int bulletCount;
         public float bulletSpacing;
-        public float orbitAngle;
+        public float areaAngle;
+        public float orientationAngle;
     }
 }
