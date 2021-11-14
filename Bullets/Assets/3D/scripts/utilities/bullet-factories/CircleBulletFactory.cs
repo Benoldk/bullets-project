@@ -28,7 +28,7 @@ namespace game.package.bullets
             {
                 bullets[i].transform.RotateAround(profile.parentTransform.position, Vector3.up, profile.orientationAngle);
             }
-            EditorApplication.isPaused = true;
+            //EditorApplication.isPaused = true;
         }
     }
 }

@@ -37,5 +37,20 @@ namespace game.package.bullets
                 CreateBullet();
             }
         }
+
+        protected virtual BulletFactoryProfile GetBulletFactoryProfile()
+        {
+            return new BulletFactoryProfile
+            {
+                parentTransform = transform,
+                bulletFormation = bulletFormation,
+                prefab = bulletPrefab,
+                bulletCount = bulletCount,
+                bulletSpacing = bulletSpacing,
+                areaAngle = areaAngle,
+                muzzleOffset = muzzleOffset,
+                orientationAngle = orientationAngle,
+            };
+        }
     }
 }
