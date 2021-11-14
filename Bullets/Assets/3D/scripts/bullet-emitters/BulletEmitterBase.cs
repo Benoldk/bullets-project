@@ -11,8 +11,8 @@ namespace game.package.bullets
         [SerializeField] protected int bulletCount = 2;
         [SerializeField] protected float bulletSpacing = 1f;
         [SerializeField] protected Vector3 muzzleOffset;
-        [Range(-360,360)]
-        [SerializeField] protected float orbitAngle;
+        [Range(0, 360)] [SerializeField] protected float areaAngle;
+        [Range(0, 360)] [SerializeField] protected float orientationAngle;
 
         protected BulletFactoryManager bulletFactoryManager;
         protected BulletFactoryBase bulletFactory;
@@ -36,6 +36,21 @@ namespace game.package.bullets
                 fireRateElpasedTime = 0;
                 CreateBullet();
             }
+        }
+
+        protected virtual BulletFactoryProfile GetBulletFactoryProfile()
+        {
+            return new BulletFactoryProfile
+            {
+                parentTransform = transform,
+                bulletFormation = bulletFormation,
+                prefab = bulletPrefab,
+                bulletCount = bulletCount,
+                bulletSpacing = bulletSpacing,
+                areaAngle = areaAngle,
+                muzzleOffset = muzzleOffset,
+                orientationAngle = orientationAngle,
+            };
         }
     }
 }

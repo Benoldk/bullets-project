@@ -1,4 +1,5 @@
-﻿using game.package.utilities;
+﻿using System;
+using game.package.utilities;
 
 namespace game.package.bullets
 {
@@ -7,21 +8,13 @@ namespace game.package.bullets
         protected override void Initialize()
         {
             gameObjectPool = GameObjectPool.Instance;
-            bulletFactoryProfile = new BulletFactoryProfile
-            {
-                parentTransform = transform,
-                bulletFormation = bulletFormation,
-                prefab = bulletPrefab,
-                bulletCount = bulletCount,
-                bulletSpacing = bulletSpacing,
-                orbitAngle = orbitAngle,
-                muzzleOffset = muzzleOffset,
-            };
+            bulletFactoryProfile = GetBulletFactoryProfile();
             bulletFactory = BulletFactoryManager.Instance.GetBulletFactory(bulletFactoryProfile.bulletFormation, gameObjectPool);
         }
 
         public override void CreateBullet()
         {
+            bulletFactoryProfile = GetBulletFactoryProfile();
             bulletFactory.CreateBullets(bulletFactoryProfile);
         }
     }

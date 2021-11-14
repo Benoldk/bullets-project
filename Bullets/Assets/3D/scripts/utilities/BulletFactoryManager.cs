@@ -23,6 +23,9 @@ namespace game.package.bullets
             if (bulletFormation == BulletFormation.Line)
                 return new LineBulletFactory(gameObjectPool);
 
+            if (bulletFormation == BulletFormation.Circle)
+                return new CircleBulletFactory(gameObjectPool);
+
             return null;
         }
     }

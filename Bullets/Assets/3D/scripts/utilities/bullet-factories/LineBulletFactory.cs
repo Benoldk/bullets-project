@@ -20,7 +20,7 @@ namespace game.package.bullets
                 if(i > 0)
                     lastPosition.x += step;
                 bullet.transform.position = lastPosition + profile.muzzleOffset;
-                bullet.transform.RotateAround(profile.parentTransform.position, Vector3.up, profile.orbitAngle);
+                bullet.transform.RotateAround(profile.parentTransform.position, Vector3.up, profile.areaAngle);
                 bullet.SetActive(true);
             }
         }
