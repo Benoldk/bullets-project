@@ -10,11 +10,12 @@ namespace game.package.bullets
 
         public override void CreateBullets(BulletFactoryProfile profile)
         {
-            float slice = ((profile.areaAngle * Mathf.Deg2Rad) / (profile.bulletCount-1));
+            float angle = 0;
             var bullets = new GameObject[profile.bulletCount];
+            float slice = profile.areaAngle * Mathf.Deg2Rad / (profile.bulletCount-1);
             for (int i = 0; i < profile.bulletCount; i++)
             {
-                float angle = slice * i;
+                angle = slice * i;
                 Vector3 position = profile.parentTransform.position;
                 position.x += profile.muzzleOffset.x * Mathf.Cos(angle);
                 position.z += profile.muzzleOffset.z * Mathf.Sin(angle);
@@ -26,9 +27,16 @@ namespace game.package.bullets
 
             for (int i = 0; i < bullets.Length; i++)
             {
+                float thisAngle = profile.areaAngle * 0.5f - 90f;
+                bullets[i].transform.RotateAround(profile.parentTransform.position, Vector3.up, thisAngle);
+            }
+
+            for (int i = 0; i < bullets.Length; i++)
+            {
                 bullets[i].transform.RotateAround(profile.parentTransform.position, Vector3.up, profile.orientationAngle);
             }
-            //EditorApplication.isPaused = true;
+
+            EditorApplication.isPaused = true;
         }
     }
 }

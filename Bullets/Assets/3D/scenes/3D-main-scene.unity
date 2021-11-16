@@ -1113,6 +1113,115 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626692814}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1799041724
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5874881886518714640, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714640, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714640, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714640, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714640, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714640, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714640, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714640, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714640, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714640, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714640, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714642, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_Name
+      value: Polygonal-Bullet-Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714642, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: angle
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: mirror
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: areaAngle
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: orbitAngle
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: bulletCount
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: orientationAngle
+      value: 315
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618261807669695808, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bb3df9a7dec783946bfe04c3a3eb45de, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ca37230202d600f42837ff98a97fd6d6, type: 3}
 --- !u!1 &1903462835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,6 +1462,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circular-Bullet-Gun
       objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714642, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
         type: 3}
       propertyPath: angle
@@ -1376,12 +1490,22 @@ PrefabInstance:
     - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
         type: 3}
       propertyPath: bulletCount
-      value: 11
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: muzzleOffset.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
+        type: 3}
+      propertyPath: muzzleOffset.z
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5874881886518714643, guid: ca37230202d600f42837ff98a97fd6d6,
         type: 3}
       propertyPath: orientationAngle
-      value: 315
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8618261807669695808, guid: ca37230202d600f42837ff98a97fd6d6,
         type: 3}
