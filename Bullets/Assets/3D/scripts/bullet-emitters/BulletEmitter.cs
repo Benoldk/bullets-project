@@ -1,5 +1,4 @@
-﻿using System;
-using game.package.utilities;
+﻿using game.package.utilities;
 
 namespace game.package.bullets
 {
